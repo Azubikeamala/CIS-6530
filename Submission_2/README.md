@@ -1,37 +1,53 @@
-Submission 2 – APT Payload Collection
 Overview
 
 This submission contains a curated collection of malicious payloads associated with documented Advanced Persistent Threat (APT) groups.
 
-The dataset was compiled using publicly available malware intelligence sources and is organized by actor attribution.
-
-Contents
-Submission_2/
-└── Threat intel malware and payload.zip
-Inside the ZIP file:
+Artifacts are organized into two categories:
 
 Executable Malware
 
-Compiled binaries attributed to specific APT groups
-
 Other Payloads
 
-Non-executable malicious artifacts (e.g., weaponized documents, supporting payload components)
+Where direct binary downloads were not publicly accessible, verified SHA256 hashes attributed to the respective APT groups were documented instead.
 
-Hash-Based Documentation
+⚠️ Safety Notice – Do Not Execute
 
-For certain APT groups where direct binary downloads were not publicly accessible, verified SHA256 hashes from VirusTotal were documented and preserved. These hashes represent confirmed malicious artifacts linked to the respective actors.
+The files included in this dataset represent real malicious artifacts or cryptographic identifiers of such artifacts.
 
-Purpose
+These files must not be executed on a host system.
 
-This dataset supports:
+Any analysis should only be performed:
 
-Threat intelligence analysis
+Within an isolated virtual machine (VM)
 
-Malware classification research
+With networking disabled unless specifically required
 
-MITRE ATT&CK mapping exercises
+Using appropriate malware analysis tools
 
-Defensive security study
+In a controlled laboratory environment
 
-No malware execution or weaponization is performed within this repository.
+The repository maintainer assumes no responsibility for misuse of the included artifacts.
+
+Academic Use Disclaimer
+
+This dataset is curated strictly for academic research and defensive cybersecurity education.
+
+Artifacts were obtained from publicly accessible malware intelligence platforms used by the security research community. No attempt has been made to operationalize, weaponize, or distribute malware for malicious purposes.
+
+Dataset Structure
+Submission_2/
+│
+├── Executable_Malware/
+└── Other_Payloads/
+
+
+Each artifact is labeled according to its associated APT group.
+Hash-only artifacts include SHA256 identifiers traceable to VirusTotal intelligence records.
+
+Sources
+
+MITRE ATT&CK – APT Group Attribution
+
+MalwareBazaar – Public Malware Repository
+
+VirusTotal – Hash Intelligence and Detection Metadata
