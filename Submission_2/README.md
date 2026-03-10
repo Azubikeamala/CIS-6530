@@ -43,6 +43,7 @@ Submission_2/
 
 Each artifact is labeled according to its associated APT group.
 Hash-only artifacts include SHA256 identifiers traceable to VirusTotal intelligence records.
+Zipped malware password: infected
 
 Sources
 
