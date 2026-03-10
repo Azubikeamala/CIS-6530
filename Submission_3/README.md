@@ -1,4 +1,4 @@
-README – Submission 3
+Submission 3
 Malware Opcode Extraction and Static Analysis using IDA
 Course
 
